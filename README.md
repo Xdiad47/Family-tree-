@@ -27,27 +27,7 @@
 
 ## 📸 Screenshots
 
-> 🖼️ **How to add your screenshots:**
-> 1. Take screenshots of your running app at `http://localhost:3000`
-> 2. Save them into the `docs/screenshots/` folder
-> 3. Suggested filenames: `homepage.png`, `tree-view.png`, `chat-panel.png`, `export.png`
-> 4. Commit & push — they'll appear here automatically!
-
-### Main Interface
-
-![Homepage](docs/screenshots/homepage.png)
-
-### Interactive Tree View
-
-![Tree View](docs/screenshots/tree-view.png)
-
-### AI Chat Panel
-
-![Chat Panel](docs/screenshots/chat-panel.png)
-
-### Export Feature
-
-![Export](docs/screenshots/export.png)
+![Family Tree AI — App Preview](docs/screenshots/family_tree.png)
 
 ---
 
