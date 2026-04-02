@@ -1,0 +1,117 @@
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #f9f8f5;
+  --color-surface: #ffffff;
+  --color-border: rgba(0, 0, 0, 0.1);
+  --color-primary: #01696f;
+  --color-primary-hover: #0c4e54;
+  --color-text: #1a1a1a;
+  --color-text-muted: #6b6b6b;
+  --color-success: #437a22;
+  --color-error: #a12c2c;
+  --color-warning: #d19900;
+  --font-body: "Satoshi";
+  --radius-card: 12px;
+  --radius-node: 10px;
+  --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  --node-self: #01696f;
+  --node-parent: #006494;
+  --node-spouse: #c2185b;
+  --node-sibling: #437a22;
+  --node-inlaw: #7a39bb;
+  --node-child: #da7101;
+  --node-uncle: #d19900;
+  --node-grandparent: #37474f;
+}
+
+* {
+  @apply box-border;
+}
+
+html,
+body {
+  @apply m-0 min-h-screen;
+}
+
+body {
+  background-image: radial-gradient(circle at 12% 4%, rgba(255, 255, 255, 0.95) 0, rgba(255, 255, 255, 0) 36%);
+}
+
+button,
+input,
+textarea {
+  @apply font-body;
+}
+
+textarea {
+  @apply resize-y;
+}
+
+.fill-node-self {
+  fill: var(--node-self);
+  background-color: var(--node-self);
+}
+
+.fill-node-parent {
+  fill: var(--node-parent);
+  background-color: var(--node-parent);
+}
+
+.fill-node-spouse {
+  fill: var(--node-spouse);
+  background-color: var(--node-spouse);
+}
+
+.fill-node-sibling {
+  fill: var(--node-sibling);
+  background-color: var(--node-sibling);
+}
+
+.fill-node-inlaw {
+  fill: var(--node-inlaw);
+  background-color: var(--node-inlaw);
+}
+
+.fill-node-child {
+  fill: var(--node-child);
+  background-color: var(--node-child);
+}
+
+.fill-node-uncle {
+  fill: var(--node-uncle);
+  background-color: var(--node-uncle);
+}
+
+.fill-node-grandparent {
+  fill: var(--node-grandparent);
+  background-color: var(--node-grandparent);
+}
+
+.grid-shell {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .grid-shell {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .grid-shell {
+    grid-template-columns: minmax(360px, 420px) minmax(0, 1fr);
+  }
+
+  .grid-shell > section:first-child {
+    position: sticky;
+    top: 0.75rem;
+    align-self: start;
+  }
+}
